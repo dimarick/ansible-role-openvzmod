@@ -460,7 +460,4 @@ def main():
 from ansible.module_utils.basic import *
 
 if __name__ == '__main__':
-    if 'ansible.module_utils.basic' in sys.modules.keys():
-        maint() # Run locally for the maintenance
-    else:
-        main()  # Run as a module
+    main()  # Run as a module
