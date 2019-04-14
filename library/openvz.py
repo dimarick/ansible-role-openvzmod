@@ -327,7 +327,7 @@ def docupdate():
                                    indent=4, default_flow_style=False)
         with open(__file__, 'w') as f:
             f.writelines(lines)
-        print 'Updated documentation in %s' % __file__
+        print('Updated documentation in %s' % __file__)
 
 def maint():
     if len(sys.argv) > 1 and sys.argv[1] == 'docupdate':
